@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angularjs</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body ng-controller="mainCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+			<div class="row">
+				<div class="col-sm-6" ng-repeat="band in bands">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h4>Ime: {{band.name}}</h4>
+						</div>
+						<div class="panel-body">
+							<img ng-src="{{band.img_url}}" class="img-responsive img-thumbnail slike"  >
+						</div>
+						<div class="panel-footer text-center">
+							Genre: {{band.genre}}
+							<button class="btn btn-info" ng-click="info(band)">Info</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+
+
+
+	<script src="vezbe.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

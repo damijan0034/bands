@@ -1,0 +1,9 @@
+.jedan,.dva {
+	width: 200px;
+	height: 200px;
+	float: left;
+	border: 1px solid black;
+}
+.slike{
+	width: 100%;
+}
